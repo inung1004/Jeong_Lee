@@ -64,22 +64,8 @@ let name = 'kmj'
 
 - const : 선언과 초기화 동시에 진행
 
-```jsx
+```
 console.log(name) //초기화가 진행 안 됨
 
 const name = 'kmj'
 ```
-
-# 특정 창크기에서 특정 요소 숨기기(react)
-
-## = 반응형
-
-```jsx
-export const Container = styled.div`
-  @media screen and (max-width: 1200px) {
-   display: none;
-  } 
-`
-```
-
-→ 너비가1200px 이상일 때만 뜨는 Container
