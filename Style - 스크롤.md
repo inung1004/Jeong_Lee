@@ -53,5 +53,3 @@ export const Memos = styled.div`
   }
 `
 ```
-
-![20220928_103641.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bcf628ec-ba6e-4b99-a9eb-77fa95b9e7eb/20220928_103641.png)
