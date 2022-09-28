@@ -25,14 +25,12 @@
 - color → 색상표
 - checkbox → 말 그대로 체크박스
 - radio → name 이라는 속성으로 묶인 것 중에 하나만 선택되는 체크박스..?
-
-**날짜**
-
-- date → 연 월 일
-- month → 연 월
-- week → 연 주
-- time → 시 분 초 분할초
-- datetime-local → 연 월 일 시 분 초 분할초
+- 날짜
+  - date → 연 월 일
+  - month → 연 월
+  - week → 연 주
+  - time → 시 분 초 분할초
+  - datetime-local → 연 월 일 시 분 초 분할초
 
 ### span, div
 
