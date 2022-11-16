@@ -27,8 +27,6 @@
 
 # ❗︎ Outlet 사용하여 내가 원하던 문제 해결
 
-------
-
 ```jsx
 import Header from '@/components/Header';
 import { Outlet } from 'react-router-dom';
