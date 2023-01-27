@@ -6,7 +6,7 @@
 
 ⇒ 데이터를 많이 감싸고, 상태를 관리하다보면 많은 복면에 닥치게 되는데 그 때 쓰는 구조가 Flux
 
-![Group 1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/433f91b0-b6b3-4bc9-a15b-3d6f8c4785d7/Group_1.png)
+![Group 1](https://user-images.githubusercontent.com/101488116/215091423-7fa07fe4-c3fa-42ab-9683-183cfcbf6de1.png)
 
 위와 같은 구조를 가지고 있음
 
