@@ -6,7 +6,7 @@
 
 ⇒ 우리가 개발을 하면서 접하게 될 프로그래밍에서의 객체는 속성과 기능을 가지는 프로그램 단위를 뜻한다.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/385d647f-4cb5-426b-b55f-fffeaeca742b/Untitled.png)
+![프로토타입 1](https://user-images.githubusercontent.com/101488116/231321376-482ea424-445f-457a-a8e1-d2390ac26b3a.png)
 
 → 속성 : 멤버 변수, 파라미터
 
@@ -54,8 +54,7 @@ JS는 프로토타입 기반 언어이다? ⇒ 모든 객체들이 메소드와 
 </aside>
 
 ### prototype 속성..?
-
-![prototype 속성.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f5dd9a49-154c-4364-8a8d-1048550c1f37/prototype_%EC%86%8D%EC%84%B1.png)
+![프로토타입 2](https://user-images.githubusercontent.com/101488116/231321463-3f67cbd1-d4cf-4afb-b08f-61644f9bf6b5.png)
 
 ⇒ 기계에게는 자동으로 prototype 이라는 공간이 생긴다.
 
@@ -64,16 +63,13 @@ JavaScript에서는 함수를 정의하고 파싱단계에 들어가면 **내부
 ⇒ prototype 속성은 **다른 곳에 생성된 함수이름의 프로토타입 객체**를 참조
 
 ⇒ 프로토타입 객체의 멤버인 constructor 속성은 함수를 참조하는 내부구조를 가진다.
-
-![함수의 프로토타입 속성이 다른 이름의 프로토타입을 컨스트럭쳐를 통해 가지고 오는 내부 구조.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e19084ce-ef55-4baf-ab3e-40bb8dcdc9f8/%ED%95%A8%EC%88%98%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85_%EC%86%8D%EC%84%B1%EC%9D%B4_%EB%8B%A4%EB%A5%B8_%EC%9D%B4%EB%A6%84%EC%9D%98_%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EC%9D%84_%EC%BB%A8%EC%8A%A4%ED%8A%B8%EB%9F%AD%EC%B3%90%EB%A5%BC_%ED%86%B5%ED%95%B4_%EA%B0%80%EC%A7%80%EA%B3%A0_%EC%98%A4%EB%8A%94_%EB%82%B4%EB%B6%80_%EA%B5%AC%EC%A1%B0.png)
-
+![함수의 프로토타입 속성이 다른 이름의 프로토타입을 컨스트럭쳐를 통해 가지고 오는 내부 구조](https://user-images.githubusercontent.com/101488116/231321539-53ffb2f4-9386-4411-9f02-cdf1a5070994.png)
 <aside> 💡 위에 말들 너무 어려워요 ⇒ prototype은 유전자이다.
 
 </aside>
 
 ## prototype에 뭔가를 추가하면?
-
-![nunu.name.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1fd78e9d-6a6c-47cb-bc82-5e992d0a889e/nunu.name.png)
+![프로토타입 3](https://user-images.githubusercontent.com/101488116/231321677-52bde95f-e287-41ce-a9d6-749cca41fb1d.png)
 
 ⇒ nunu에 직접적으로 name을 부여한 적이 없음에도 자식(nunu)이 사용가능
 
@@ -102,11 +98,10 @@ arr.sort(); //배열을 정렬하는 함수
 console.log(arr); //(3) [1, 2, 4] 
 ```
 
-=⇒ 난 sort() 함수를 만든 기억이 없는데!!! 저게 뭐야..?
+=⇒ 난 sort()를 만든 기억이 없는데!!! 저게 뭐야..?
 
 그건 바로 **Array의 유전자(prototype)** 덕분
-
-![Array.sort.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f68c746a-9426-486f-98b1-8fc49bf45f44/Array.sort.png)
+![프로토타입 4](https://user-images.githubusercontent.com/101488116/231321759-f23530e6-a217-4e52-93c1-c3a23b21cb57.png)
 
 → (콘솔창에 Array.prototype을 쳤을 때 나오는 것들) → Array의 유전자
 
