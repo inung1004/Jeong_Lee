@@ -1,15 +1,18 @@
-1. 커밋하고 나서의 화면은 아래와 같아요
+### 1. 커밋하고 나서의 화면은 아래와 같아요
    1. 저는 57-머시기 브랜치에서 커밋(push)까지 했어요
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e9950ffa-a832-4b51-8abb-7d92988ea23f/Untitled.png)
+<img width="800" alt="Untitled" src="https://github.com/inung1004/Jeong_Lee/assets/101488116/32664394-1b76-40ce-ac4d-7b6a07f00c82">
 
-1. 왼쪽 사이드바를 확인해보면 PULL REQUESTS가 있는데 그 위로 커서를 호버하면 아래와 같은 + 버튼이 뜰 거에요. → + 버튼 클릭
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7e3dd460-9456-42ba-9c4e-b22e9a127c78/Untitled.png)
+### 2. 왼쪽 사이드바를 확인해보면 PULL REQUESTS가 있는데 그 위로 커서를 호버하면 아래와 같은 + 버튼이 뜰 거에요. → + 버튼 클릭
 
-1. 아래와 같은 화면이 떠야 해요.
+<img width="207" alt="Untitled" src="https://github.com/inung1004/Jeong_Lee/assets/101488116/54a43b84-e535-466d-85da-b55f749b21d4">
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/335fd2a4-78b9-483f-87b5-b29a3b9b290e/Untitled.png)
+
+### 3. 아래와 같은 화면이 떠야 해요.
+
+<img width="597" alt="Untitled" src="https://github.com/inung1004/Jeong_Lee/assets/101488116/27af0792-dc77-444e-b6b3-69bbc1b1d677">
+
 
 1. From Repo와 To Repo에는 작업한 레포를 입력해주세요.
 2. 왼쪽 Branch는 작업한 Branch를 넣고 오른쪽 Branch에는 머지할 Branch를 선택해주세요.
@@ -22,4 +25,3 @@
 7. Label은 이슈 생성할 때 넣어주었던 Label과 동일한 것으로 넣어주세요.
 8. Create Pull Request 클릭
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a6bdc035-bed6-4bda-831c-4e5755245b47/Untitled.png)
