@@ -1,4 +1,4 @@
-# Yarn Berry?
+# Yarn Berry
 
 yarn 2.0 버전부터 등장한 새로운 버전의 yarn
 
@@ -51,6 +51,12 @@ yarn 2.0 버전부터 등장한 새로운 버전의 yarn
 ```
 
 → 각 의존성은 **Zip 아카이브**로 관리
+
+## + yarn berry와 monorepo의 관계성
+
+> 보통 모노레포를 구축할 때 yarn berry를 사용하던데 그 이유가 궁금해짐
+
+1. Yarn Berry는 모노레포를 쉽게 관리할 수 있는 Workspaces를 지원, 이를 통해 공통의 종속성을 한 곳에서 관리하고, 패키지 간의 연결을 쉽게 설정 O
 
 ### reference
 
