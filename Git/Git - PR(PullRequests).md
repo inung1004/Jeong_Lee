@@ -4,7 +4,7 @@
 <img width="800" alt="Untitled" src="https://github.com/inung1004/Jeong_Lee/assets/101488116/32664394-1b76-40ce-ac4d-7b6a07f00c82">
 
 
-### 2. 왼쪽 사이드바를 확인해보면 PULL REQUESTS가 있는데 그 위로 커서를 호버하면 아래와 같은 + 버튼이 뜰 거에요. → + 버튼 클릭
+### 2. 왼쪽 사이드바를 확인해보면 PULL REQUESTS가 있는데 그 위로 커서를 올리면 아래와 같은 + 버튼이 뜰 거에요. → + 버튼 클릭
 
 <img width="207" alt="Untitled" src="https://github.com/inung1004/Jeong_Lee/assets/101488116/54a43b84-e535-466d-85da-b55f749b21d4">
 
