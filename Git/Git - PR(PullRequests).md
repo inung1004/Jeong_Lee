@@ -1,5 +1,5 @@
 ### 1. 커밋하고 나서의 화면은 아래와 같아요
-   1. 저는 57-머시기 브랜치에서 커밋(push)까지 했어요
+   1. 저는 57-머시기 브랜치에서 push까지 했어요
 
 <img width="800" alt="Untitled" src="https://github.com/inung1004/Jeong_Lee/assets/101488116/32664394-1b76-40ce-ac4d-7b6a07f00c82">
 
