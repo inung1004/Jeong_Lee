@@ -10,7 +10,7 @@
 str.match(regexp);
 ```
 
-**해당 문자열.match('찾을 단어')**
+해당 문자열.match('찾을 단어')\*\*
 
 ### 예제
 
@@ -27,10 +27,13 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120850
 > 문자열 `my_string` 이 매개변수로 주어질 때, `my_string` 안에 있는 숫자만 골라 오름차순 정렬한 리스트를 return 하도록 solution 함수를 작성해보세요.
 
 ```jsx
-return my_string.match(/\\d/g).sort((a, b) => a - b).map(Number);
+return my_string
+  .match(/\\d/g)
+  .sort((a, b) => a - b)
+  .map(Number);
 ```
 
-**.match()**를 이용해서 숫자만 뽑아내서 배열로 만들어준 뒤,
+.match()\*\*를 이용해서 숫자만 뽑아내서 배열로 만들어준 뒤,
 
 .sort()로 오름차순 정리 후
 

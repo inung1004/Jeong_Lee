@@ -7,7 +7,7 @@
 ### 문법
 
 ```jsx
-arr.join([separator])
+arr.join([separator]);
 ```
 
 separator는 매개변수로, 배열의 각 요소를 구분할 문자열이다.
@@ -17,15 +17,15 @@ separator는 매개변수로, 배열의 각 요소를 구분할 문자열이다.
 ### 예제
 
 ```jsx
-const love = ['상우', '와', '윤지'];
+const love = ["상우", "와", "윤지"];
 
 console.log(love.join());
 // 상우,와,윤지
 
-console.log(love.join(''));
+console.log(love.join(""));
 // 상우와윤지
 
-console.log(love.join('-'));
+console.log(love.join("-"));
 // 상우-와-윤지
 ```
 
@@ -37,19 +37,19 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120839
 
 ```tsx
 let rspWinner = {
-    2: 0,
-    0: 5,
-    5: 2,
-  };
+  2: 0,
+  0: 5,
+  5: 2,
+};
 
- var answer: string = rsp
-   .split("")
-   .map((v) => rspWinner[v])
-   .join(""); 
+var answer: string = rsp
+  .split("")
+  .map((v) => rspWinner[v])
+  .join("");
 ```
 
-가위바위보에서 이기는 것만 골라서 키와 값으로 관리하는 **rspWinner 객체**
+가위바위보에서 이기는 것만 골라서 키와 값으로 관리하는 rspWinner 객체\*\*
 
-문자열 rsp를 배열로 바꾸어 하나하나 들어가서 값이 뭔지 확인하게 해주는 **split과 map**
+문자열 rsp를 배열로 바꾸어 하나하나 들어가서 값이 뭔지 확인하게 해주는 split과 map\*\*
 
-map에서는 인자를 가져와서 rspWinner[v]로 이기는 수로 바꾸어 준 뒤 문자열을 return 해줘야 하기 때문에 **.join()**을 사용한다.
+map에서는 인자를 가져와서 rspWinner[v]로 이기는 수로 바꾸어 준 뒤 문자열을 return 해줘야 하기 때문에 .join()\*\*을 사용한다.

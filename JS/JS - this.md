@@ -20,7 +20,7 @@ delete window.b; //된다.
 delete b; //된다.
 ```
 
-<aside> 💡 **전역변수를 선언하면 자바스크립트 엔진은 이를 전역객체의 프로퍼티로 할당한다 하지만 delete은 단순 변수선언이 아니라 정확히 객체의 프로퍼티로 할당해주어야 된다**
+<aside> 💡 전역변수를 선언하면 자바스크립트 엔진은 이를 전역객체의 프로퍼티로 할당한다 하지만 delete은 단순 변수선언이 아니라 정확히 객체의 프로퍼티로 할당해주어야 된다
 
 </aside>
 
@@ -33,11 +33,11 @@ var func = function (x) {
 func(1); // Window{ ... } 1
 
 var obj = {
-  method : func,
-  name : "안윤지"
+  method: func,
+  name: "안윤지",
 };
 obj.method(2); // method{ name: '안윤지', method: f } 2
-obj['method'](3); // method{ name: '안윤지', method: f } 3
+obj["method"](3); // method{ name: '안윤지', method: f } 3
 ```
 
 <aside> 💡 메서드로서 호출한 경우 → 메서드 호출의 주체 (메서드명 앞의 객체) 참조
@@ -49,7 +49,7 @@ obj['method'](3); // method{ name: '안윤지', method: f } 3
 ```jsx
 var obj1 = {
   outer: function () {
-    console.log(this); 
+    console.log(this);
     var innerFunc = function () {
       console.log(this);
     };

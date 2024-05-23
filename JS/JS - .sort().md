@@ -11,9 +11,9 @@
 arr.sort([compareFunction]);
 ```
 
-**compareFunction**
+compareFunction\*\*
 
-- **정렬 순서를 정의하는 함수.**
+- 정렬 순서를 정의하는 함수.\*\*
 - 이 값이 생략되면, 배열의 element들은 문자열로 취급되어, 유니코드 값 순서대로 정렬됩니다.
   - ex ) [2, 1, 3, 10].sort() 할 경우 [1, 10, 2, 3] 반환
 - 이 함수는 두 개의 배열 element를 파라미터로 입력 받습니다.

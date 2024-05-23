@@ -2,7 +2,7 @@
 
 ### 구조 분해 할당 구분은 배열이나 객체의 속성을 해체하여 그 값을 개별 변수에 담을 수 있게 하는 JavaScript 표현식
 
-<aside> 💡 **객체나 변수로 분해할 수 있게 해주는  특별한 문법**
+<aside> 💡 객체나 변수로 분해할 수 있게 해주는  특별한 문법
 
 </aside>
 
@@ -21,7 +21,7 @@ console.log(z); // 2
 
 </aside>
 
-------
+---
 
 # 😎 화살표 함수의 특징
 
@@ -50,7 +50,7 @@ console.log(b); // 2
 ```jsx
 var a, b;
 
-[a=5, b=7] = [1];
+[a = 5, b = 7] = [1];
 console.log(a); // 1
 console.log(b); // 7
 ```
@@ -80,10 +80,10 @@ var a, b, c, d;
 console.log(a); // '전영준 선배님'
 console.log(b); // '정지관'
 
-[,,] = study(); // 반환 값 모두 무시 가능
+[, ,] = study(); // 반환 값 모두 무시 가능
 ```
 
-→ 구조 분해를 사용하면 반환된 배열에 대한 작업을 더 간결하게 수행할 수 있다.  ⇒ 위 예제에서 study() 는 출력으로 배열을 반환하는데, 하나의 구조 분해만으로 값을 분석
+→ 구조 분해를 사용하면 반환된 배열에 대한 작업을 더 간결하게 수행할 수 있다. ⇒ 위 예제에서 study() 는 출력으로 배열을 반환하는데, 하나의 구조 분해만으로 값을 분석
 
 → [a, , b, c] 로 필요하지 않은 반환 값을 무시할 수 있다.
 
@@ -97,7 +97,7 @@ console.log(b); // [2, 3]
 
 → 배열을 구조 분해할 경우, 나머지 구문을 이용해 분해하고 남은 부분을 하나의 변수에 할당할 수 있다.
 
-<aside> 💡 **!! 나머지 요소의 오른쪽 뒤에 쉼표가 있으면 SyntaxError 가 발생한다.**
+<aside> 💡 !! 나머지 요소의 오른쪽 뒤에 쉼표가 있으면 SyntaxError 가 발생한다.
 
 </aside>
 
@@ -127,8 +127,8 @@ console.log(parseProtocol('<https://developer.mozilla.org/en-US/Web/JavaScript>'
 ### 기본 할당 📃
 
 ```jsx
-var o = {p: 42, q: true};
-var {p, q} = o;
+var o = { p: 42, q: true };
+var { p, q } = o;
 
 console.log(p); // 42
 console.log(q); // true
@@ -139,7 +139,7 @@ console.log(q); // true
 ```jsx
 var a, b;
 
-({a, b} = {b: 1, a: 2});
+({ a, b } = { b: 1, a: 2 });
 
 console.log(a, b); // 2 1
 ```
@@ -149,8 +149,8 @@ console.log(a, b); // 2 1
 ### 새로운 변수 이름으로 할당하기 📃
 
 ```jsx
-var o = {p: 42, q: true};
-var {p: foo, q: bar} = o;
+var o = { p: 42, q: true };
+var { p: foo, q: bar } = o;
 
 console.log(foo); // 42
 console.log(bar); // true
@@ -161,22 +161,22 @@ console.log(bar); // true
 ### 기본값 📃
 
 ```jsx
-var {a = 10, b = 5} = {a: 3};
+var { a = 10, b = 5 } = { a: 3 };
 
 console.log(a); // 3
 console.log(b); // 5
 
-var {a: aa = 10, b: bb = 5} = {a: 3}; //기본값 갖는 새로운 이름의 변수에 할당하기
+var { a: aa = 10, b: bb = 5 } = { a: 3 }; //기본값 갖는 새로운 이름의 변수에 할당하기
 
 console.log(aa); // 3
-console.log(bb); // 5 
+console.log(bb); // 5
 ```
 
 → 객체로부터 해체된 값이 undefined인 경우, 변수에 기본값을 할당할 수 있다.
 
 → 새로운 변수명 할당과 기본값 할당을 한번에 할 수 있다.
 
-------
+---
 
 # 🤔 구조 분해 할당을 사용하는 이유
 
@@ -185,14 +185,14 @@ console.log(bb); // 5
 ⇒ 이럴 때 객체나 배열을 변수로 '분해'할 수 있게 해준다.
 
 ```jsx
-let arr = ["YoonJi", "Ahn"]
+let arr = ["YoonJi", "Ahn"];
 let [firstName, surName] = arr;
- 
+
 alert(firstName); //YoonJi
-alert(serName);   //Ahn
- 
+alert(serName); //Ahn
+
 //구조 분해 할당을 사용하지 않으면 밑에처럼 직접할당해야한다.
- 
+
 // let [firsName, surname] = arr;
 let firstName = arr[0];
 let surname = arr[1];

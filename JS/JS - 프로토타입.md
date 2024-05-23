@@ -2,7 +2,7 @@
 
 ## 클래스, 객체, 인스턴스 이게 다 뭘까
 
-객체지향 프로그래밍에서 객체는 **변수, 함수, 자료 구조의 조합이 될 수 있는데, 특히 객체지향 프로그래밍에서 클래스를 기반으로 한 변수를 클래스의 인스턴스**라고 지칭한다.
+객체지향 프로그래밍에서 객체는 변수, 함수, 자료 구조의 조합이 될 수 있는데, 특히 객체지향 프로그래밍에서 클래스를 기반으로 한 변수를 클래스의 인스턴스\*\*라고 지칭한다.
 
 ⇒ 우리가 개발을 하면서 접하게 될 프로그래밍에서의 객체는 속성과 기능을 가지는 프로그램 단위를 뜻한다.
 
@@ -30,56 +30,59 @@
 
 # 본격 프로토타입
 
-<aside> 💡 JS는 **객체**를 상속하기 위하여 프로토타입이라는 방식이 존재
+<aside> 💡 JS는 객체를 상속하기 위하여 프로토타입이라는 방식이 존재
 
 </aside>
 
 ```jsx
-function 기계(){
-	this.q = 'strike';
-	this.w = 'snowball';
+function 기계() {
+  this.q = "strike";
+  this.w = "snowball";
 } //이 아이는 복사기계(부모)
 
 var nunu = new 기계(); //nunu에 복사(자식)
 
-console.log(nunu) // 기계 {q: "strike", w: "snowball"}
+console.log(nunu); // 기계 {q: "strike", w: "snowball"}
 
-//**프로토타입**을 사용하여 자식에게 데이터를 물려줄 수 있다. 
+//프로토타입을 사용하여 자식에게 데이터를 물려줄 수 있다.
 ```
 
 JS는 프로토타입 기반 언어이다? ⇒ 모든 객체들이 메소드와 속성들을 상속 받기 위한 템플릿으로써 프로토타입 객체를 가진다는 의미
 
-<aside> 💡 상속되는 속성과 메소드들은 각 객체가 아니라 객체의 생성자의  **prototype이라는 속성**에 정의 되어있다.
+<aside> 💡 상속되는 속성과 메소드들은 각 객체가 아니라 객체의 생성자의  prototype이라는 속성에 정의 되어있다.
 
 </aside>
 
 ### prototype 속성..?
+
 ![프로토타입 2](https://user-images.githubusercontent.com/101488116/231321463-3f67cbd1-d4cf-4afb-b08f-61644f9bf6b5.png)
 
 ⇒ 기계에게는 자동으로 prototype 이라는 공간이 생긴다.
 
-JavaScript에서는 함수를 정의하고 파싱단계에 들어가면 **내부적으로 수행되는 작업**이 있다.
+JavaScript에서는 함수를 정의하고 파싱단계에 들어가면 내부적으로 수행되는 작업\*\*이 있다.
 
-⇒ prototype 속성은 **다른 곳에 생성된 함수이름의 프로토타입 객체**를 참조
+⇒ prototype 속성은 다른 곳에 생성된 함수이름의 프로토타입 객체\*\*를 참조
 
 ⇒ 프로토타입 객체의 멤버인 constructor 속성은 함수를 참조하는 내부구조를 가진다.
 ![함수의 프로토타입 속성이 다른 이름의 프로토타입을 컨스트럭쳐를 통해 가지고 오는 내부 구조](https://user-images.githubusercontent.com/101488116/231321539-53ffb2f4-9386-4411-9f02-cdf1a5070994.png)
+
 <aside> 💡 위에 말들 너무 어려워요 ⇒ prototype은 유전자이다.
 
 </aside>
 
 ## prototype에 뭔가를 추가하면?
+
 ![프로토타입 3](https://user-images.githubusercontent.com/101488116/231321677-52bde95f-e287-41ce-a9d6-749cca41fb1d.png)
 
 ⇒ nunu에 직접적으로 name을 부여한 적이 없음에도 자식(nunu)이 사용가능
 
 ### 어떻게 그게 가능한 것인가
 
-⇒ **프로토타입 체인** 덕분
+⇒ 프로토타입 체인\*\* 덕분
 
 ⇒ name이 없으면 부모에게 가서 즉, 부모 유전자(prototype)한테 가서 name을 가져온다.
 
-- **프로토타입 체인**
+- 프로토타입 체인\*\*
 
   프로토타입 객체는 상위 프로토타입으로부터 메서드와 속성을 상속 받을 수도 있고, 그 상위 프로토타입 또한 상속 받을 수 있는 것
 
@@ -95,12 +98,12 @@ JavaScript에서는 함수를 정의하고 파싱단계에 들어가면 **내부
 var arr = [4, 2, 1]; //우리가 배열을 만드는 방식
 var arr = new Array(4, 2, 1); //컴퓨터가 인식해서 배열을 만드는 방식
 arr.sort(); //배열을 정렬하는 함수
-console.log(arr); //(3) [1, 2, 4] 
+console.log(arr); //(3) [1, 2, 4]
 ```
 
 =⇒ 난 sort()를 만든 기억이 없는데!!! 저게 뭐야..?
 
-그건 바로 **Array의 유전자(prototype)** 덕분
+그건 바로 Array의 유전자(prototype)\*\* 덕분
 ![프로토타입 4](https://user-images.githubusercontent.com/101488116/231321759-f23530e6-a217-4e52-93c1-c3a23b21cb57.png)
 
 → (콘솔창에 Array.prototype을 쳤을 때 나오는 것들) → Array의 유전자
@@ -116,7 +119,7 @@ console.log(arr); //(3) [1, 2, 4]
 ```jsx
 var arr = [4, 2, 1];
 Array.prototype.getName = function (name) {
-	return name;
+  return name;
 };
 console.log(arr.getName("yoon Ji")); //Yoon Ji
 ```
@@ -125,6 +128,6 @@ console.log(arr.getName("yoon Ji")); //Yoon Ji
 
 ## 정리
 
-<aside> 💡 1) 프로토타입 체인은 더 이상 부모가 없을 때까지 진행된다. 2) 부모의 유전자를 콘솔창에 찍어보면 꽤나 많은 유전자들을 확인할 수 있고, 그걸 자식의 자식까지 싹 다 사용할 수 있다. 3) prototype에 직접 무언가를 추가하여도 그 자식을 사용할 수 있다. 4) __proto__는 자식에게 부모의 유전자를 참조하여 사용할 수 있도록 생성된 것, (자식.**proto** == 부모.prototype = true)
+<aside> 💡 1) 프로토타입 체인은 더 이상 부모가 없을 때까지 진행된다. 2) 부모의 유전자를 콘솔창에 찍어보면 꽤나 많은 유전자들을 확인할 수 있고, 그걸 자식의 자식까지 싹 다 사용할 수 있다. 3) prototype에 직접 무언가를 추가하여도 그 자식을 사용할 수 있다. 4) __proto__는 자식에게 부모의 유전자를 참조하여 사용할 수 있도록 생성된 것, (자식.proto == 부모.prototype = true)
 
 </aside>

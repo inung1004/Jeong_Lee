@@ -2,7 +2,7 @@
 
 ## Why ⚡️
 
-동아리에서 개발하고, 현재 유지보수 하고 있는 **\*PICK**에 주말 급식이라는 페이지와 여러 기능들이 추가되게 되었다.
+동아리에서 개발하고, 현재 유지보수 하고 있는 \*PICK\*\*에 주말 급식이라는 페이지와 여러 기능들이 추가되게 되었다.
 
 \*_PICK ⇒ 기존에 종이로 이루어지던 출석부의 단점들을 분석하고 이를 웹 서비스로 해결하려는 프로젝트_
 
@@ -43,7 +43,7 @@ const blob = new Blob([response.data], {
 - useMutation ⇒ [https://velog.io/@kimhyo_0218/React-Query-리액트-쿼리-useMutation-기본-편](https://velog.io/@kimhyo_0218/React-Query-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BF%BC%EB%A6%AC-useMutation-%EA%B8%B0%EB%B3%B8-%ED%8E%B8)
 - fileSaver.js ⇒ https://github.com/eligrey/FileSaver.js
 
-# H**ow 🔥**
+# How 🔥\*\*
 
 ## 사전설정 🔧
 

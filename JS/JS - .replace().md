@@ -6,7 +6,7 @@
 
 ```jsx
 function solution(my_string) {
-    return my_string.replace(/[aeiou]/g, '');
+  return my_string.replace(/[aeiou]/g, "");
 }
 ```
 
@@ -34,13 +34,13 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120850
 
 ```jsx
 var answer = my_string
-    .replace(/[a-z | A-Z]/g, "")
-    .split("")
-    .map(Number)
-    .sort((a, b) => a - b);
+  .replace(/[a-z | A-Z]/g, "")
+  .split("")
+  .map(Number)
+  .sort((a, b) => a - b);
 ```
 
-**.replace()**를 통해 영어를 모두 제거하고,
+.replace()\*\*를 통해 영어를 모두 제거하고,
 
 .split()을 통해 배열로 바꾸어 준 뒤,
 
